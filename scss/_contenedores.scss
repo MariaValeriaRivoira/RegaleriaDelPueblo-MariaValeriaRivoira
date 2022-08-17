@@ -1,13 +1,22 @@
 .container-titulo{
     background-image: url(imagenes/fondoFPeq2.png);
 }
+
+
+@mixin paddings($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+
+
 .container-regaleria,
 .container-formulario,
 .container-ofertas {
     padding: 0; 
     background-image: url(imagenes/fondo1.png);
-    padding-top: 5rem;
-   padding-bottom: 5rem;
+    @include paddings(5rem, 5rem);
+    
 }
 
 

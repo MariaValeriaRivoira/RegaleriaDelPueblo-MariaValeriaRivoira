@@ -26,9 +26,45 @@
 .imgRegaleria{
   border-radius: 15%;
   border-color: $primario;
-  border-style: groove;
+ 
 }
+.imagenReg--1{
+  @extend .imgRegaleria;
+  border-style: dotted;
+}
+.imagenReg--2{
+  @extend .imgRegaleria;
+  border-style:dashed;
+}
+.imagenReg--3{
+  @extend .imgRegaleria;
+  border-style:double;
+}
+.imagenReg--4{
+  @extend .imgRegaleria;
+  border-style:groove;
+}
+.imagenReg--5{
+  @extend .imgRegaleria;
+  border-style:hidden;
+}
+
+
 .imgLibreria{
-  border-color: $negro;
+  border-radius: 12%;
   border-style: groove;
 }
+
+$imagenesLibreria: (
+  uno: #f423cc,
+  dos: #999222,
+  tres: #ac2304,
+  cuatro: #fdb9f8
+);
+
+  @each $imagen, $colorBorde in $imagenesLibreria{
+    .img--#{$imagen}{
+      border-color: $colorBorde;
+      
+    }
+  }

@@ -53,14 +53,40 @@ span {
   border-color: #f525ad;
   border-style: groove; }
 
-.imgRegaleria {
+.imgRegaleria, .imagenReg--1, .imagenReg--2, .imagenReg--3, .imagenReg--4, .imagenReg--5 {
   border-radius: 15%;
-  border-color: #9ac1f5;
+  border-color: #9ac1f5; }
+
+.imagenReg--1 {
+  border-style: dotted; }
+
+.imagenReg--2 {
+  border-style: dashed; }
+
+.imagenReg--3 {
+  border-style: double; }
+
+.imagenReg--4 {
   border-style: groove; }
 
+.imagenReg--5 {
+  border-style: hidden; }
+
 .imgLibreria {
-  border-color: #000000;
+  border-radius: 12%;
   border-style: groove; }
+
+.img--uno {
+  border-color: #f423cc; }
+
+.img--dos {
+  border-color: #999222; }
+
+.img--tres {
+  border-color: #ac2304; }
+
+.img--cuatro {
+  border-color: #fdb9f8; }
 
 .container-titulo {
   background-image: url(imagenes/fondoFPeq2.png); }
